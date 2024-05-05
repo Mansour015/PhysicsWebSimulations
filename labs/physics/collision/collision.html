@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SMU Virtual Labs</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link href="collision.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div id="navbar"></div>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Collision</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Labs</a></li>
+                            <!-- <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li> -->
+                            <li class="breadcrumb-item text-white active" aria-current="page">Collision</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- course Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <!-- <i class="bi bi-exclamation-triangle display-1 text-primary"></i> -->
+                    <!-- <h1 class="display-1">404</h1> -->
+                    <h1 class="mb-4">Lab Overview</h1>
+                    <p class="mb-4">Consider two solid bodies M1 of mass m1 and m2,
+                        two carts, gliding on a horizontal and frictionless track.
+                        If M1 starts with velocity v1 in the positive direction of
+                        the x axis, it stays constant until the first cart reaches
+                        the second cart M2 and collides with it. The second cart
+                        is initially at rest, i.e. it speed v2 is nul.
+                        <br><br> During the collision the carts interact and exert forces
+                        upon each other, which causes their velocities to vary.
+                        After the collision, the carts M1 and M2 have respectively velocities v
+                        0
+                        1 and v
+                        0
+                        2 wich are different from their
+                        velocities before the collision.
+                        <br><br>The law of conservation of momentum states : the total momentum is conserved during the collision. Which
+                        yields :
+                        <br>Is there a conservation of mechanical energy ?
+                        <br><br> <b>a. Elastic collision:</b> In some collisions, the force between
+                        the carts during the collision is a conservative force, in
+                        this case the mechanical energy is conserved. As a consequence, the total kinetic energy before the collision is
+                        equal to the total kinetic after it (the mechanical energy
+                        is purely in kinetic form when the carts are away from
+                        each other).
+                    </p>
+                    <img src="/img/collision1.png" alt="illustration unavailable" class="centered-image mb-4">
+                    <p class="mb-4">This can be written as :</p>
+                    <img src="/img/collision_eq1.png" alt="illustration unavailable" class="centered-image mb-4">
+                    <p class="mb-4">Using equations (2) and (1) and the initial condition
+                        v2 = 0, we can solve for the final velocities and find :
+                    </p>
+                    <img src="/img/collision_eq2.png" alt="illustration unavailable" class="centered-image mb-4">
+                    <p class="mb-4"><b>b. Inelastic collision:</b> In other collisions, the force between the carts during the collision is a non conservative
+                        force, in this case the mechanical energy is not conserved (a part of mechanical energy is lost into heat). As a
+                        consequence, the total kinetic energy before the collision
+                        is less than the total kinetic after it (again the mechanical energy is purely in kinetic form when the carts are
+                        away from each other).
+                    </p>
+                    <img src="/img/collision2.png" alt="illustration unavailable" class="centered-image mb-4">
+                    <p class="mb-4">We will consider the extreme case where the two carts
+                        stay stuck to each other after the collision, which means
+                        that their final velocities are equal, i.e. v
+                        0
+                        1 = v
+                        0
+                        2
+                        . In this
+                        case equation (2) is not true, but equation (1) is still
+                        true, and it yields :
+                    </p>
+                    <img src="/img/collision_eq3.png" alt="illustration unavailable" class="centered-image mb-4">
+                    <p class="mb-4">Then we can solve for v2</p>
+                    <img src="/img/collision_eq4.png" alt="illustration unavailable" class="centered-image mb-4">
+
+
+
+                    <a class="btn btn-primary rounded-pill py-3 px-5" href="simulation.html">Go To Lab Simulation</a>
+                    <a class="btn btn-primary rounded-pill py-3 px-5" href="evaluation.html">Go To Lab Evaluation</a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- course End -->
+        
+
+    <!-- Footer Start -->
+    <div id="footer"></div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/wow/wow.min.js"></script>
+    <script src="/lib/easing/easing.min.js"></script>
+    <script src="/lib/waypoints/waypoints.min.js"></script>
+    <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
